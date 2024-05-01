@@ -1,0 +1,6 @@
+<% @questions.each do |question| %>
+  タイトル：<%= question.title %><br>
+  内容：<%= question.content %><br>
+  投稿者名：<%= question.name %><br>
+  希望回答期限：<%= question.due %><br><br>
+<% end %>
