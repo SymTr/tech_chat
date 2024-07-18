@@ -1,0 +1,8 @@
+<h1><%= @question.title %></h1>
+<p><%= @question.content %></p>
+
+<%= form_with model: [ @question, @question.answers.build ] do |form| %>
+  <%= form.label :content, "Your answer" %>
+  <%= form.text_area :content %>
+  <%= form.submit "Post your answer" %>
+<% end %>
